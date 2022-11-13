@@ -35,6 +35,12 @@ const cart = [
 
 //CODE HERE
 
+// const productOfPrice = price => {
+//     return price.reduce((a, c) => a + c)
+// }
+// const addedPrice = productOfPrice(cart.price)
+// console.log(addedPrice)
+
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
 
