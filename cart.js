@@ -60,8 +60,16 @@ const cart = [
 */
 
 //CODE HERE
+// const sum = (arr, cb) => {
+//     for (let i = 0; i < arr.length; i++){
+//         arr.forEach(function(price, index){
 
+//         })
+//     }
+// }
+// const calcFinalPrice (cartTotal, couponValue, tax) =>{
 
+// }
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -85,6 +93,9 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
+customers name - to be able to address the customer
+customers contact info - to be able to reach the customer
+customers order number - to confirm this is what the customer wanted
 
 */
 
@@ -94,3 +105,10 @@ const cart = [
 */
 
 //CODE HERE
+
+let customer = {
+    "firstName": "Robert",
+    "lastName": "Culbert",
+    "phoneNumber": 8178076658,
+    "orderNumber": 8675309
+}
