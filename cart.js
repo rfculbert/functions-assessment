@@ -34,16 +34,16 @@ const cart = [
 ]
 
 //CODE HERE
+let total = 0
 
-// const productOfPrice = price => {
-//     return price.reduce((a, c) => a + c)
-// }
-// const addedPrice = productOfPrice(cart.price)
-// console.log(addedPrice)
+function sumOfAll(array){
+    for (let i = 0; i < cart.length; i++){
+        total += cart[i].price 
+    }
+    console.log(total)
+}
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
-
-
+sumOfAll(cart)
 //////////////////PROBLEM 2////////////////////
 /*  
     Write a function called `calcFinalPrice` that
@@ -60,16 +60,15 @@ const cart = [
 */
 
 //CODE HERE
-// const sum = (arr, cb) => {
-//     for (let i = 0; i < arr.length; i++){
-//         arr.forEach(function(price, index){
 
-//         })
-//     }
-// }
-// const calcFinalPrice (cartTotal, couponValue, tax) =>{
+function calcFinalPrice(cartTotal, couponValue, tax) {
+    let taxTotal = cartTotal * tax
+    let couponTotal = cartTotal - couponValue
+    let total = couponTotal += taxTotal
+    console.log(total)
+}
 
-// }
+calcFinalPrice(40, 8, .06)
 
 //////////////////PROBLEM 3////////////////////
 /*  

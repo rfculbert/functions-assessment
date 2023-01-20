@@ -67,9 +67,13 @@ empOne.getSchedule()
 */
 
 //CODE HERE
+// let empTwo = [...empOne]
 // let empTwo += empOne
-// let empTwo = new Employee('Nick, weekday mornings, weekday afternoons')
-// empTwo.getSchedule()
+empTwo = {
+    ...empOne
+}
+empTwo.name = "Nick"
+
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -105,9 +109,9 @@ class Manager extends Employee {
     getEmployees(){
         console.log(`${this.name} manages ${this.employees}`)
     }
-    // addEmployee(){
-        
-    // }
+    addEmployee(emp){
+     //I cant get this to work....
+    }
 }
 
 /*
@@ -122,7 +126,7 @@ class Manager extends Employee {
 */
 
 //CODE HERE
-let manager = new Manager("Winston", "Weekday mornings, weekday afternoons", "Cece and Schmidt")
+let manager = new Manager("Winston", "Weekday mornings, weekday afternoons", ["Cece and Schmidt"])
 
 /*
     Call the `getEmployees` method on the
@@ -138,7 +142,7 @@ manager.getEmployees()
 */
 
 //CODE HERE 
-
+manager.addEmployee('Coach')
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 
@@ -146,3 +150,4 @@ manager.getEmployees()
 */
 
 //CODE HERE
+manager.getEmployees()

@@ -41,6 +41,7 @@ const pizza = {
     tags: ['deal', 'value', 'family']
 };
 
+console.log(pizza)
 //////////////////PROBLEM 2////////////////////
 /* 
     Let's print a few values from our pizza object.
@@ -106,7 +107,8 @@ const foodArr = [{
     popularity: 50,
     rating: 50,
     tags: 'unpopular'
-}]
+},
+]
 
 //////////////////PROBLEM 4////////////////////
 /* 
